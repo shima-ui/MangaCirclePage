@@ -1,30 +1,16 @@
 {
-  "short_name": "Manga Circle",
-  "name": "Manga Circle Page",
+  "short_name": "MangaCircle",
+  "name": "MangaCircle - 漫画を愛する開発チーム",
   "icons": [
     {
       "src": "favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
-    },
-    {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    },
-    {
-      "src": "Octocat.png",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/png"
     }
   ],
   "start_url": "/",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#667eea",
+  "background_color": "#ffffff",
+  "description": "漫画文化を愛する開発チーム MangaCircle のホームページ"
 }
