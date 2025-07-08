@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="./favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#667eea" />
+    <title>MangaCircle - 漫画を愛する開発チーム</title>
+    <script type="text/javascript">
+      // GitHub Pages用のSPAフォールバック
+      // URL パラメータを取得してハッシュルーティングにリダイレクト
+      var pathSegmentsToKeep = 1;
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + 
+        '/#' + l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/') + 
+        (l.search ? '&' + l.search.slice(1) : '') + 
+        l.hash
+      );
+    </script>
+  </head>
+  <body>
+    <div style="
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+      height: 100vh; 
+      font-family: Inter, sans-serif; 
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+      color: white;
+      text-align: center;
+    ">
+      <div>
+        <h1>リダイレクト中...</h1>
+        <p>少々お待ちください</p>
+      </div>
+    </div>
+  </body>
+</html>
