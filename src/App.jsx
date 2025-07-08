@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom';
 import './App.css';
 
+// ベースURLを取得（Viteの公式方法）
+const baseUrl = import.meta.env.BASE_URL || './';
+
 function App() {
   return (
     <div className="App">
@@ -53,7 +56,7 @@ function App() {
             <h2>メンバー紹介</h2>
             <div className="members-grid">
               <div className="member-card">
-                <img src="/images/team/shima_manga.png" alt="シマ" className="member-avatar" />
+                <img src={`${baseUrl}images/team/shima_manga.png`} alt="シマ" className="member-avatar" />
                 <h3>シマ</h3>
                 <p className="member-role">Developer & Designer</p>
                 <p className="member-description">
@@ -62,7 +65,7 @@ function App() {
                 </p>
               </div>
               <div className="member-card">
-                <img src="/images/team/nanana7bump.png" alt="NAKUSA" className="member-avatar" />
+                <img src={`${baseUrl}images/team/nanana7bump.png`} alt="NAKUSA" className="member-avatar" />
                 <h3>NAKUSA</h3>
                 <p className="member-role">Backend Developer</p>
                 <p className="member-description">
@@ -80,7 +83,7 @@ function App() {
             <h2>プロダクト紹介</h2>
             <div className="products-grid">
               <div className="product-card">
-                <img src="/images/products/manga-battle.png" alt="漫画布教バトル" className="product-image" />
+                <img src={`${baseUrl}images/products/manga-battle.png`} alt="漫画布教バトル" className="product-image" />
                 <h3>漫画布教バトル</h3>
                 <p className="product-description">
                   お気に入りの漫画を紹介し合い、その魅力を競い合うソーシャルプラットフォーム。
@@ -93,7 +96,7 @@ function App() {
                 </div>
               </div>
               <div className="product-card">
-                <img src="/images/products/manga-securities.png" alt="漫画証券" className="product-image" />
+                <img src={`${baseUrl}images/products/manga-securities.png`} alt="漫画証券" className="product-image" />
                 <h3>漫画証券</h3>
                 <p className="product-description">
                   漫画作品を株式のように取引できる仮想投資プラットフォーム。

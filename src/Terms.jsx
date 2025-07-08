@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom';
 import './App.css';
 
+// ベースURLを取得（Viteの公式方法）
+const baseUrl = import.meta.env.BASE_URL || './';
+
 function Terms() {
   return (
     <div className="App">
