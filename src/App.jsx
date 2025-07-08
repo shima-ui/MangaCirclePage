@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './App.css';
 
 function App() {
@@ -79,7 +80,7 @@ function App() {
             <h2>プロダクト紹介</h2>
             <div className="products-grid">
               <div className="product-card">
-                <img src="/images/products/manga-battle.svg" alt="漫画布教バトル" className="product-image" />
+                <img src="/images/products/manga-battle.png" alt="漫画布教バトル" className="product-image" />
                 <h3>漫画布教バトル</h3>
                 <p className="product-description">
                   お気に入りの漫画を紹介し合い、その魅力を競い合うソーシャルプラットフォーム。
@@ -92,7 +93,7 @@ function App() {
                 </div>
               </div>
               <div className="product-card">
-                <img src="/images/products/manga-securities.svg" alt="漫画証券" className="product-image" />
+                <img src="/images/products/manga-securities.png" alt="漫画証券" className="product-image" />
                 <h3>漫画証券</h3>
                 <p className="product-description">
                   漫画作品を株式のように取引できる仮想投資プラットフォーム。
@@ -112,8 +113,14 @@ function App() {
       {/* フッター */}
       <footer className="footer">
         <div className="container">
-          <p>&copy; 2025 MangaCircle. All rights reserved.</p>
-          <p>Made with ♥️ by Shima & NAKUSA</p>
+          <div className="footer-content">
+            <div className="footer-links">
+              <Link to="/terms" className="footer-link"><span>利用規約</span></Link>
+              <Link to="/privacy" className="footer-link"><span>プライバシーポリシー</span></Link>
+            </div>
+            <p>&copy; 2025 MangaCircle. All rights reserved.</p>
+            <p>Made with ♥️ by Shima & NAKUSA</p>
+          </div>
         </div>
       </footer>
     </div>

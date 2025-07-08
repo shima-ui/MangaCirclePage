@@ -440,6 +440,117 @@ section h2::after {
   box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
 }
 
+/* 利用規約・プライバシーポリシーセクション */
+.terms-section,
+.privacy-section {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  position: relative;
+  padding: 4rem 0;
+}
+
+.terms-section::before,
+.privacy-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23667eea' fill-opacity='0.02'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") repeat;
+  opacity: 0.3;
+}
+
+.terms-content,
+.privacy-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.terms-item,
+.privacy-item {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  border-radius: 15px;
+  padding: 2.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(102, 126, 234, 0.1);
+  transition: all 0.3s ease;
+}
+
+.terms-item:hover,
+.privacy-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.terms-item h3,
+.privacy-item h3 {
+  font-size: 1.4rem;
+  color: #667eea;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  border-bottom: 2px solid #667eea;
+  padding-bottom: 0.5rem;
+}
+
+.terms-item p,
+.privacy-item p {
+  color: #4a4a4a;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.terms-item ul,
+.privacy-item ul {
+  color: #4a4a4a;
+  line-height: 1.8;
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.terms-item ul li,
+.privacy-item ul li {
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.terms-item ul li::marker,
+.privacy-item ul li::marker {
+  color: #667eea;
+}
+
+.contact-info {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  border-left: 4px solid #667eea;
+}
+
+.contact-info p {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.terms-footer,
+.privacy-footer {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 15px;
+  color: white;
+}
+
+.terms-footer p,
+.privacy-footer p {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
 /* フッター */
 .footer {
   background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
@@ -464,6 +575,57 @@ section h2::after {
 @keyframes footerPattern {
   0% { transform: translateX(0) translateY(0); }
   100% { transform: translateX(60px) translateY(60px); }
+}
+
+.footer-content {
+  position: relative;
+  z-index: 1;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #667eea, #764ba2);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.footer-link:hover::before {
+  transform: translateX(0);
+}
+
+.footer-link:hover {
+  color: white;
+  border-color: #667eea;
+  transform: translateY(-2px);
+}
+
+.footer-link span {
+  position: relative;
+  z-index: 1;
 }
 
 .footer p {
@@ -532,6 +694,16 @@ section h2::after {
 
   .product-image {
     height: 200px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .footer-link {
+    padding: 0.6rem 1.2rem;
   }
 }
 
