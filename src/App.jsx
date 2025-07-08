@@ -52,7 +52,7 @@ function App() {
             <h2>メンバー紹介</h2>
             <div className="members-grid">
               <div className="member-card">
-                <img src="/images/team/shima_manga.svg" alt="シマ" className="member-avatar" />
+                <img src="/images/team/shima_manga.png" alt="シマ" className="member-avatar" />
                 <h3>シマ</h3>
                 <p className="member-role">Developer & Designer</p>
                 <p className="member-description">
@@ -61,7 +61,7 @@ function App() {
                 </p>
               </div>
               <div className="member-card">
-                <img src="/images/team/nanana7bump.svg" alt="NAKUSA" className="member-avatar" />
+                <img src="/images/team/nanana7bump.png" alt="NAKUSA" className="member-avatar" />
                 <h3>NAKUSA</h3>
                 <p className="member-role">Backend Developer</p>
                 <p className="member-description">
